@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Zoom Example</title>
+	<style>
+		body {
+			text-align: center;
+		}
+
+		.zoom-container {
+			display: inline-block;
+			position: relative;
+		}
+
+		.zoom-wrapper {
+			box-shadow: 0 0 5px black;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="range" min="100" max="300" id="size" value="100" />
+	<br />
+	<div class="zoom-container">
+		<img id="zoom1" src="images/1-thumbnail.jpeg" />
+	</div>
+	<br />
+	<div class="zoom-container">
+		<img id="zoom2" src="images/2-thumbnail.jpeg" />
+	</div>
+	<script src="../src/zoom.js"></script>
+	<script>
+		(function init(d) {
+			var zoom = new Zoom('zoom1', "images/1.jpeg");
+			var zoomSecond = new Zoom('zoom2', 'images/2.jpeg');
+			var size = d.getElementById("size");
+			size.onchange = function changeSize(e) {
+				zoom.adjustSize(Number(e.target.value));
+			}
+		})(document);
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "zoom",
+  "version": "1.0.0",
+  "description": "Zoom photos on web",
+  "main": "src/zoom.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-minify": "^0.5.1"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvwebm/zoom.git"
+  },
+  "keywords": [
+    "zoom",
+    "image"
+  ],
+  "author": "Code Warrior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nvwebm/zoom/issues"
+  },
+  "homepage": "https://github.com/nvwebm/zoom#readme"
+}
