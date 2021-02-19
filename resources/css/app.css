@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.text-app-primary {
+    color: blue;
+}
+.rank .checked {
+    color: yellow;
+}
